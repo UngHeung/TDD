@@ -4,7 +4,8 @@ function App() {
 
     const handleDigitClick = (e) => {
         if (e.target.classList.contains("digit")) {
-            total.innerText = e.target.innerText;
+            const currentTotal = total.innerText;
+            total.innerText = currentTotal + e.target.innerText;
         }
     };
 
